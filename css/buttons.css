@@ -1,0 +1,19 @@
+.btn{
+    -webkit-box-shadow: inset 10px 10px 10px -11px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: inset 10px 10px 10px -11px rgba(0, 0, 0, 0.45);
+    box-shadow: inset 10px 10px 10px -11px rgba(0, 0, 0, 0.45);
+    border-radius: 100px;
+    background-color: #2BA769;
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
