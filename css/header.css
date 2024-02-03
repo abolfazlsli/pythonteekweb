@@ -176,3 +176,125 @@
 
 }
 
+@media (max-width: 1000px) {
+    .header{display: none}
+    .phoneheader{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #F5F5F5;
+        width: 100%;
+        height: 150px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+    }
+    .glass{
+        opacity: 0;
+        visibility: hidden;
+        backdrop-filter: blur(10px);
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        display: block;
+    }
+    .logo{
+        left: 0;
+        width: 250px;
+        height: 250px;
+    }
+    .menuopener{
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        cursor: pointer;
+        box-shadow: #F5F5F5 0px 0px 5px 0px;
+    }
+    .menuopener svg{
+        width: 80%;
+        height: 80%;
+        color: #2BA769;
+    }
+    .menu{
+        position: fixed;
+        z-index: 99;
+        right: -100%;
+        top: 0;
+        width: 75%;
+        background-color: white;
+        height: 100vh;
+        box-shadow: #F5F5F5 0px 0px 5px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 15px;
+        padding-right: 10px;
+        flex-direction: column;
+
+    }
+    .menu .pitem{
+        padding:10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+    }
+    .menu .pitem a{
+        color: black;
+        text-decoration: none;
+    }
+    .menu .pitem .logo{
+        position: static !important;
+    }
+    .closebtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 20px;
+        cursor: pointer;
+        width: 100px;
+        height: 100px;
+    }
+    .closebtn svg{
+        color: #2BA769;
+        width: 70px;
+        height: 70px;
+
+    }
+    .singupbox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top:88%;
+    }
+    .snitem{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .snitem a{
+        color: #707070;
+        text-decoration: none;
+        padding: 10px;
+    }
+    .singupbtn{
+        color: white !important;
+        background-color: #2BA769;
+    }
+    .singupbtn a{
+        color: white;
+    }
+
+}

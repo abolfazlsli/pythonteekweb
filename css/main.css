@@ -52,3 +52,9 @@ a:hover::after{
     position: relative;
     background-color: #00000000;
 }
+
+@media (max-width: 1000px) {
+    a {
+        font-size: 35px;
+    }
+}
