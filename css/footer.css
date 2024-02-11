@@ -1,0 +1,107 @@
+.footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #5E5E5E;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.footeritem{
+    width: 50%;
+    padding: 20px;
+
+}
+.footertitle{
+    text-align: right;
+    color: white;
+}
+.footertitle h1{
+    direction: rtl;
+    color: white;
+}
+.articalbox{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footeritem h3{
+    color: white;
+    text-align: center;
+}
+.artical{
+    width: 30%;
+    height: 200px;
+    border-radius: 50px;
+    background-color: white;
+    margin: 5px;
+    position: relative;
+}
+.artical img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+.content{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.artical:hover .content{
+    height: 100px;
+}
+.socalbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemsc{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemsc svg {
+    width: 80%;
+    height: 80%;
+}
+.socalmediabox{
+    width: 330px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 90px;
+}
+.pageender{
+    width: 100%;
+    height: fit-content;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2BA769;
+
+}
+.footertitle h1 span{
+    color: #2BA769;
+}

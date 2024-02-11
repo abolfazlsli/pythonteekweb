@@ -122,7 +122,8 @@ let productlist =
 
 
 const pythoncurs = (val , e = undefined) => {
-    elm.innerHTML = ''
+    elm[0].innerHTML = ''
+    elm[1].innerHTML = ''
     elms = document.querySelectorAll(".prditem")
     console.log(elms)
     productlist[val].map(

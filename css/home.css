@@ -133,6 +133,177 @@
 .ph{
     display: none;
 }
+
+.pointers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.point{
+    margin: 5px;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    box-shadow: gray 0px 0px 5px 0px;
+    cursor: pointer;
+}
+
+.ourteam{
+
+}
+.team{
+    width: 100%;
+    height: 74vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.person{
+    width: 372px;
+    height: 420px;
+    box-shadow: gray 0px 0px 5px 0px;
+    border-radius: 30px;
+    background-color: white;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+.personitem{
+    width: 100%;
+    height: 60%;
+}
+.pcontact{
+    background-color: white;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 40% !important;
+    direction: rtl;
+}
+.cp{
+    padding: 10px;
+}
+.pcontact h3{
+    margin: 0;
+
+}
+.leftperson{
+    left: 208px;
+}
+.rightperson{
+    right: 123px;
+}
+.centerperson{
+    right: 430px;
+}
+.activeperson{
+    width: 472px;
+    height: 520px;
+    z-index: 2;
+}
+.activepoint{
+    width: 40px;
+    border-radius: 90px;
+    background-color: #2BA769;
+}
+
+.suportbox{
+    width: 100%;
+    height: 80vh;
+    background-color: #EBEBEB;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contextofsuport{
+    width: 90%;
+    height: 200px;
+    padding: 20px;
+    text-align: right;
+    position: relative;
+}
+.phonebox{
+    position: absolute;
+    bottom: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phonebox a {
+    color: #555555;
+    text-decoration: none;
+}
+.phonebox .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: gray 0px 0px 5px 0px;
+    margin: 10px;
+}
+
+
+.phonebox .icon svg {
+    width: 60%;
+    height: 60%;
+    color: #2BA769;
+}
+.spbtn{
+    width: 90%;
+}
+.btnholdersp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+
+}
+.suportbox .logo {
+    top: -45px;
+    left: 612px;
+}
+.suportbox .spitem {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.suportholder{
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    height: 505px;
+    position: relative;
+}
+.suportericon{
+    background-image: url("../img/customer-support-2143203-1801818-416879040.png");
+    background-size: cover;
+    background-position: center;
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    border-color: #EBEBEB;
+    border-style: solid;
+    border-width: 6px;
+    margin-top: 15px;
+}
+.suporticontext{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*for phone */
+
 @media (max-width : 1000px) {
     .pc{
         display: none;
@@ -173,24 +344,28 @@
         overflow-y: scroll;
         padding: 15px;
     }
-    .phhitem{
+    .phheaditems .prditem{
         width: 100%;
         height: 130px;
         border-radius: 100%;
         box-shadow: #707070 0px 0px 5px 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
 
     }
-    .phhitem img{
-        width: 80%;
-        margin: 2px;
+    .phheaditems .prditem img{
+        width: 100px;
+        height: 100px;
     }
-    .phhitem p{
+    .phheaditems .prditem p{
         display: none;
+        color: white;
+        font-size: 55px;
     }
     .phheaditems .btn {
         background-color: #2BA769;
@@ -232,6 +407,9 @@
     }
     .phproductcontact .product .icon .more a{
         font-size: 20px;
+    }
+    .phheaditems .btn p{
+        display: block;
     }
     /* width */
     .phproductcontact::-webkit-scrollbar {
