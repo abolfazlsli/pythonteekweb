@@ -13,7 +13,7 @@ const innerHeader = () => {
             </div>
         </div>
         <div class="logo">
-            <img src="./img/logo.png" />
+            <img src="https://pythonteek.com/assets/img/logo.png" />
         </div>
         <div class="item">
             <div class="subitem">
@@ -29,7 +29,7 @@ const innerHeader = () => {
     </div>
     <div class="phoneheader">
         <div class="logo" id="logo">
-            <img src="./img/logo.png" />
+            <img src="https://pythonteek.com/assets/img/logo.png" />
         </div>
         <div class="menuopener" onclick="menumanager()">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">

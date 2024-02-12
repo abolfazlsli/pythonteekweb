@@ -1,0 +1,131 @@
+.pagestarter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.pagestarter .aboutusitem{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+}
+.root .title.abt{
+    justify-content: flex-end;
+}
+.aboutusitem img{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+}
+.aboutusitem p{
+    font-size: 26px;
+    color: #707070;
+}
+.activtybox{
+    width: 100%;
+    height: 600px;
+    background-color: #E4E4E4;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activtybox .activtyitem{
+    width: 33%;
+    height: 95%;
+    margin: 18px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subitemactivity{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+    margin: 6px;
+    color: #2BA769;
+}
+.partners{
+    width: 100%;
+    display: -webkit-box;
+    overflow-x: scroll;
+    padding: 10px;
+}
+.partner{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    box-shadow: gray 0px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.partner img{
+    width: 80%;
+    height: 80%;
+    border-radius: 100%;
+}
+.story{
+    text-align: right;
+
+}
+.story p{
+    font-size: 30px;
+}
+
+/* map styles */
+
+.mapbox{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.cvbox{
+    width: 100%;
+    height: 110px;
+    background-color: #2BA769;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cvitem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: row-reverse;
+    width: 80%;
+}
+.cvitem p{
+    color: white;
+}
+.cvitem .btn{
+    background-color: white;
+}
+.cvitem .btn a{
+    color: black !important;
+}
+.cvitem img{
+    position: absolute;
+    width: 150px;
+    left: 58px;
+    bottom: -74px;
+    transform: rotate(355deg);
+}
+
+.cvitem.icon{
+    width: 20%;
+}
