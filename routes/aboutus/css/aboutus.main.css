@@ -87,13 +87,13 @@
 
 .mapbox{
     width: 100%;
-    height: 100vh;
+    height: 560px;
 }
 
 
 .cvbox{
     width: 100%;
-    height: 110px;
+    height: 150px;
     background-color: #2BA769;
     display: flex;
     justify-content: center;
@@ -120,12 +120,95 @@
 }
 .cvitem img{
     position: absolute;
-    width: 150px;
+    width: 200px;
     left: 58px;
-    bottom: -74px;
+    bottom: -95px;
     transform: rotate(355deg);
 }
 
 .cvitem.icon{
     width: 20%;
+}
+
+.mapbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapitem {
+    width: 50% !important;
+}
+
+.consept{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.addres {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.map{
+    width: 50%;
+    height: 100%;
+    border-radius: 50px;
+    box-shadow: gray 0px 0px 5px 0px;
+}
+
+.addres .line{
+    width: 30px;
+    height: 2px;
+    border-radius: 90px;
+    background-color: #707070;
+}
+
+.addres span{
+    color: #707070;
+    font-size: 25px;
+    cursor: pointer;
+    padding-left: 15px;
+}
+.addres:hover span{
+    color: #2BA769;
+}
+.addres:hover .line {
+    width: 50px;
+    background-color: #2BA769;
+}
+.addres.activeaddres .line{
+    width: 70%;
+    border-radius: 90px;
+    background-color: #2BA769;
+}
+.addres.activeaddres span {
+    color: #2BA769;
+}
+.addresastext .addresicon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addresicon svg {
+    width: 70%;
+    height: 70%;
+    color: #2BA769;
+}
+
+.addrestext span{
+    color: #2BA769;
+}
+
+.addresastext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
 }
