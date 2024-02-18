@@ -105,3 +105,12 @@
 .footertitle h1 span{
     color: #2BA769;
 }
+@media (max-width: 1000px) {
+    .pageender h5{
+        font-size: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+
+}

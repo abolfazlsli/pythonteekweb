@@ -47,7 +47,7 @@ const innerHeader = () => {
             </div>
             <div class="pitem">
                 <div class="logo">
-                <img src="img/logo.png" />
+                <img src="https://pythonteek.com/assets/img/logo.png" />
                 </div>
             </div>
             <div class="pitem">

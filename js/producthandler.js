@@ -4,7 +4,7 @@ let productlist =
         python:[
             {
             img:'https://wallpapercave.com/wp/wp8583820.jpg',
-            name : 'دوره پایتون',
+            name : 'دوره a1 ',
             time : '1/1/1',
             explain : 'در این دوره پایتون یاد میگیرید',
 

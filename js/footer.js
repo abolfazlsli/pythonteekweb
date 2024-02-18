@@ -56,5 +56,5 @@ let data = `<div class="footer">
         © Copyright Pythonteek. All Rights Reserved
     </h5>
 </div>`
-let elm = document.querySelector(".footerjs")
-elm.innerHTML = data
+let elmfooter = document.querySelector(".footerjs")
+elmfooter.innerHTML = data
