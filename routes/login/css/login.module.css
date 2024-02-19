@@ -1,0 +1,114 @@
+*{
+    transition-duration: 0.3s;
+}
+
+.bod{
+    height: 100vh;
+}
+
+.formbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formbox .formitem{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    height: 100vh;
+}
+
+.formbox .formitem img{
+    width: 100%;
+
+}
+.title{
+    justify-content: flex-end;
+}
+.title h1{
+    text-align: right;
+    color: #555555;
+}
+.inp{
+    width: 100%;
+}
+.inpholder input{
+    justify-content: flex-start;
+    box-shadow: #555555 0px 0px 5px 0px;
+    direction: rtl;
+    height: 50px;
+
+}
+.inpholder{
+    align-items: stretch;
+}
+.inpholder span{
+    box-shadow: #555555 0px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius: 20px;
+    align-items: center;
+}
+.inpholder span svg {
+    width: 70%;
+    height: 70%;
+}
+.formlog{
+    width: 100%;
+}
+.inpholder .btn{
+    width: 50%;
+}
+.btnsbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnsholder{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+}
+
+.preboxh{
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.preboxh a{
+    font-size: 0;
+}
+.pre{
+    background-color: #2BA769;
+    opacity: 0.75;
+}
+.preboxs{
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.preboxs a{
+    font-size: 15px;
+}
+.formitem .inputbox .inp{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.activeformitem{
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+}

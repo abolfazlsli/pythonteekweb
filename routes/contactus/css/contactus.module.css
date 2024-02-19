@@ -1,0 +1,247 @@
+.jobsbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job{
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    box-shadow: gray 0px 0px 5px 0px;
+    position: relative;
+    margin: 25px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.jobholder{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.jobhead{
+    position: absolute;
+    left: 10px;
+    width: 20px;
+    height: 30px;
+    margin: 10px;
+    background-color: white;
+}
+.job p{
+    text-align: center;
+}
+.titofjob{
+    padding-right: 10px;
+}
+.tech{
+    margin: 10px;
+    width: 75%;
+    background-color: #529FA3;
+}
+.teachers{
+    margin: 10px;
+    width: 75%;
+}
+.mohtava{
+    margin: 10px;
+    width: 75%;
+    background-color: #0481B6;
+}
+
+.rahyar{
+    margin: 10px;
+    width: 75%;
+    background-color: #521551;
+}
+
+.web{
+    background-color: #DAB348;
+    margin: 10px;
+    width: 75%;
+}
+.judgeform{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.jitem{
+    width: 50%;
+    padding:10px;
+    position: relative;
+    text-align: right;
+}
+
+.form{
+    width: 100%;
+
+}
+
+.judgehead{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    left: 270px;
+}
+
+.form{
+    width: 80%;
+    height: 100%;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+
+}
+
+.formholder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inpholder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.inpholder input
+{
+    width: 50%;
+    border: none;
+    outline: none;
+    padding:5px;
+    height: 33px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    /*font-size: 25px;*/
+}
+.inpholder span {
+    width: 50px;
+    background-color: #2BA769;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding:5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.inpholder textarea{
+    width: 60%;
+    height: 300px;
+    border-radius: 30px;
+    resize: none;
+    padding:10px;
+    border: none;
+    outline: none;
+}
+.inpholder .btn{
+    width: 60%;
+}
+
+.quicksingup{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.quicksingup .item{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quicksingup .item img{
+    width: 80%;
+}
+.quicksingup .item .quickform {
+    width: 80%;
+    background-color: white;
+    box-shadow: gray 0px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+
+.quicksingup .item .quickform .inpholder input{
+    box-shadow: gray 0px 0px 5px 0px;
+}
+.quicksingup .item .quickform .inpholder input[type="tel"]{
+    direction: rtl;
+}
+
+.quicksingup .item .quickform .inpholder span svg {
+    width: 80%;
+    color: white;
+}
+.quicksingup .item .quickform .inpholder span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+}
+
+.checkbox{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.checkbox span{
+    color: #555555;
+}
+
+
+@media (max-width: 1000px) {
+    .job{
+        height: fit-content;
+    }
+    .judgeform{
+        flex-direction: column;
+    }
+    .judgeform .jitem{
+        width: 90%;
+    }
+    .title h2{
+        font-size: 35px !important;
+    }
+    .quicksingup{
+        flex-direction: column;
+    }
+    .quicksingup .item{
+        width: 90%;
+    }
+    .checkbox{
+        width: 90%;
+    }
+    .checkbox span{
+        font-size: 25px;
+        text-align: right;
+    }
+    .checkbox input{
+        width: 30px;
+        height: 30px;
+    }
+}

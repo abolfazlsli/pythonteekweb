@@ -6,10 +6,10 @@ const innerHeader = () => {
                 <a href="/">خانه</a>
             </div>
             <div class="subitem">
-                <a href="/">درباه ما</a>
+                <a href="/routes/aboutus">درباه ما</a>
             </div>
             <div class="subitem">
-                <a href="/">تماس باما</a>
+                <a href="/routes/contactus">تماس باما</a>
             </div>
         </div>
         <div class="logo">
@@ -54,10 +54,10 @@ const innerHeader = () => {
                 <a href="/">خانه</a>
             </div>
             <div class="pitem">
-                <a href="/">درباره ما</a>
+                <a href="/routes/aboutus">درباره ما</a>
             </div>
             <div class="pitem">
-                <a href="/">تماس باما</a>
+                <a href="/routes/contactus">تماس باما</a>
             </div>
             <div class="pitem">
                 <a href="/">اخبار</a>
