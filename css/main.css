@@ -1,6 +1,19 @@
+*{
+    -webkit-tap-highlight-color: #00000000;
+}
+@keyframes btnanimation {
+    from {
+        bottom: 70px;
+    }
+    to{
+        bottom: 120px;
+    }
+    
+}
 body{
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 *{
     font-family: "Segoe UI";
@@ -16,9 +29,10 @@ a::after{
     content: "";
     width: 0%;
     position: absolute;
-    bottom: -5px;
+    bottom: -15px;
     left: 0;
     background-color: #2BA769;
+    box-shadow: #2BA769 0px 0px 5px 0px;
     height: 2px;
     border-radius: 10px;
     transition-duration: 0.3s;
@@ -32,6 +46,8 @@ a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    background-color: white;
 }
 .root{
     width: 1360px;
@@ -67,6 +83,32 @@ a:hover::after{
         font-size: 60px !important;
         text-align: right;
     }
+    .button-33{
+        width: 150px;
+        height: 150px;
+    }
+    .button-33 svg{
+        width: 80% !important;
+        height: 80% !important;
+    }
+    .leftside img {
+        width: 500px;
+    }
+    .leftside .backdrop {
+        width: 700px;
+        height: 700px;
+    }
+    .topparent .rightside {
+        width: 50%;
+        top: 200px !important;
+        left: 197px !important;
+    }
+    .rightside h1 {
+        font-size: 55px;
+    }
+    #testsvg {
+        width: 80% !important;
+    }
 
 }
 .title{
@@ -79,4 +121,129 @@ a:hover::after{
 .title h2{
     color:#707070;
     text-decoration: underline;
+}
+
+@keyframes borderanimation {
+    from{
+        border-radius: 72% 28% 36% 57% / 42% 67% 33% 49%;
+        
+    }
+    to{
+        border-radius: 95% 51% 59% 80% / 65% 90% 56% 72%;
+    }
+}
+.boxtopside{
+    width: 100% !important;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    background-image: url('https://office.mizito.ir/assets/img/wallpaper/back-pattern.png');
+    background-repeat: no-repeat;
+    background: rgb(0,16,36);
+    background:linear-gradient(7deg, rgba(0,16,36,0) 0%, rgba(0,0,0,0) 20%,rgb(0 255 162 / 12%) 45%);
+}
+.leftside{
+    width: 50%;
+    left: 260px !important;
+}
+.rightside{
+    width: 50%;
+    top: 300px !important;
+    left: -100px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logobox{
+    left: 15px !important;
+    top: 15px !important;
+
+}
+.logobox img{
+    width: 100px;
+    height: 100px;
+    
+}
+.ailogo img{
+    width: 300px;
+}
+.backdrop{
+    width: 500px;
+    height: 500px;
+    background-color: #2BA769;
+    border-style: solid;
+    border-color: #2ba769d0;
+    border-width: 5px;
+    border-radius: 72% 28% 36% 57% / 42% 67% 33% 49%;
+    position: absolute;
+    bottom: 10px;
+    z-index: -1;
+    animation-name: borderanimation;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: absolute;
+    z-index: 1;
+    left: 46%;
+    bottom: 71px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: btnanimation;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; 
+}
+.button-33:hover {
+    box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+    animation-play-state: paused;
+}
+#testsvg{
+    position: absolute;
+    color: #00000000;
+    bottom: 95px;
+    left: -494px;
+    width: 32%;
+    height: 100%;
+    transform: rotate(-270deg) rotateX(180deg);
+}
+.button-33 svg{
+    width: 30px;
+    height: 30px;
+}
+.topparent{
+    position: relative;
+
+}
+
+.btn a::after{
+    display: none !important;
 }

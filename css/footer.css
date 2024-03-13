@@ -1,7 +1,7 @@
 .footer{
     width: 100%;
     height: fit-content;
-    background-color: #5E5E5E;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -15,11 +15,11 @@
 }
 .footertitle{
     text-align: right;
-    color: white;
+    color: black;
 }
 .footertitle h1{
     direction: rtl;
-    color: white;
+    color: black;
 }
 .articalbox{
     width: 100%;
@@ -29,13 +29,13 @@
     align-items: center;
 }
 .footeritem h3{
-    color: white;
+    color: black;
     text-align: center;
 }
 .artical{
     width: 30%;
     height: 200px;
-    border-radius: 50px;
+    border-radius: 15px;
     background-color: white;
     margin: 5px;
     position: relative;
@@ -48,14 +48,14 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    border-radius: 15px;
 }
 .content{
     width: 100%;
     height: 80px;
     background-color: white;
-    border-bottom-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     position: absolute;
     bottom: 0;
     display: flex;
@@ -110,6 +110,31 @@
         font-size: 8px;
         width: 100%;
         text-align: center;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footeritem{
+        width: 95%;
+    }
+    .articalbox{
+        justify-content: space-evenly;
+    }
+    .artical {
+        width: 30%;
+        height: 250px;
+        border-radius: 50px;
+        background-color: white;
+        margin: 5px;
+        position: relative;
+    }
+    .artical span {
+        font-size: 30px;
+        padding: 20px;
+    }
+    .content{
+        height: fit-content;
+        
     }
 
 

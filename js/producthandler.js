@@ -123,7 +123,7 @@ let productlist =
 
 const pythoncurs = (val , e = undefined) => {
     elm[0].innerHTML = ''
-    elm[1].innerHTML = ''
+    // elm[1].innerHTML = ''
     elms = document.querySelectorAll(".prditem")
     console.log(elms)
     productlist[val].map(
@@ -132,7 +132,7 @@ const pythoncurs = (val , e = undefined) => {
              <div class='product'>
              <div class="icon">
                     <div class="btn more">
-                      <a href="#">یشتر</a>
+                      <a href="#">بیشتر</a>
                     </div>
                     <img src=${e.img} />
               </div>
@@ -148,26 +148,26 @@ const pythoncurs = (val , e = undefined) => {
                </div>
             </div>
         `
-            elm[1].innerHTML += `
-             <div class='product'>
-             <div class="icon">
-                    <div class="btn more">
-                      <a href="#">یشتر</a>
-                    </div>
-                    <img src=${e.img} />
-              </div>
-              <div class="contact">
-                    <div class="citem">
-                        <p>${e.name}</p>
-                        <p>${e.time}</p>
-                    </div>
-                    <hr/>
-                    <div class="citem">
-                            <p>${e.explain}</p>
-                    </div>
-               </div>
-            </div>
-        `
+        //     elm[1].innerHTML += `
+        //      <div class='product'>
+        //      <div class="icon">
+        //             <div class="btn more">
+        //               <a href="#">بیشتر</a>
+        //             </div>
+        //             <img src=${e.img} />
+        //       </div>
+        //       <div class="contact">
+        //             <div class="citem">
+        //                 <p>${e.name}</p>
+        //                 <p>${e.time}</p>
+        //             </div>
+        //             <hr/>
+        //             <div class="citem">
+        //                     <p>${e.explain}</p>
+        //             </div>
+        //        </div>
+        //     </div>
+        // `
         }
     )
     for (let i = 0; i < elms.length; i++) {
@@ -183,7 +183,7 @@ productlist['python'].map(
              <div class='product'>
              <div class="icon">
                     <div class="btn more">
-                      <a href="#">یشتر</a>
+                      <a href="#">بیشتر</a>
                     </div>
                     <img src=${e.img} />
               </div>
@@ -199,25 +199,25 @@ productlist['python'].map(
                </div>
             </div>
         `
-        elm[1].innerHTML += `
-             <div class='product'>
-             <div class="icon">
-                    <div class="btn more">
-                      <a href="#">یشتر</a>
-                    </div>
-                    <img src=${e.img} />
-              </div>
-              <div class="contact">
-                    <div class="citem">
-                        <p>${e.name}</p>
-                        <p>${e.time}</p>
-                    </div>
-                    <hr/>
-                    <div class="citem">
-                            <p>${e.explain}</p>
-                    </div>
-               </div>
-            </div>
-        `
+        // elm[1].innerHTML += `
+        //      <div class='product'>
+        //      <div class="icon">
+        //             <div class="btn more">
+        //               <a href="#">بیشتر</a>
+        //             </div>
+        //             <img src=${e.img} />
+        //       </div>
+        //       <div class="contact">
+        //             <div class="citem">
+        //                 <p>${e.name}</p>
+        //                 <p>${e.time}</p>
+        //             </div>
+        //             <hr/>
+        //             <div class="citem">
+        //                     <p>${e.explain}</p>
+        //             </div>
+        //        </div>
+        //     </div>
+        // `
     }
 )

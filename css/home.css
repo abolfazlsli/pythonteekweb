@@ -39,6 +39,9 @@
     flex-direction: column;
 }
 
+.prditem p{
+    margin: 0;
+}
 
 .productmenu{
     display: flex;
@@ -69,9 +72,10 @@
 .product{
     width: 350px;
     height: 300px;
-    margin: 30px;
-    border-radius: 30px;
-    background-color: #F5F5F5;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: gray 0px 0px 10px 0px;
 }
 .icon {
     position: relative;
@@ -90,8 +94,8 @@
 }
 .icon img {
     width: 100%;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .contact{
@@ -151,8 +155,9 @@
     cursor: pointer;
 }
 
-.ourteam{
-
+.pcontact{
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
 }
 .team{
     width: 100%;
@@ -171,6 +176,13 @@
     position: absolute;
     background-position: center;
     background-size: cover;
+}
+.person{
+    border-radius: 15px;
+}
+model-viewer {
+    width: 400px;
+    height: 400px;
 }
 .personitem{
     width: 100%;
@@ -303,13 +315,115 @@
     align-items: center;
 }
 /*for phone */
-
 @media (max-width : 1000px) {
-    .pc{
+    /* .pc{
         display: none;
     }
     .ph{
         display: block;
+    } */
+    body{
+        overflow-x: hidden;
+    }
+    .team{
+        display: -webkit-box;
+        overflow-x: scroll;
+        height: fit-content;
+
+    }
+    .person{
+        position: static;
+        width: 472px;
+        height: 520px;
+        margin: 20px;
+    }
+    .cp{
+        position: relative;
+    }
+    .cp .more{
+        bottom: 138px;
+    }
+    .point{
+        display: none;
+    }
+    .suportbox{
+        flex-direction: column;
+        border-radius:0px;
+    }
+    .suportbox .spitem{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .phonebox {
+        bottom: 70px;
+    }
+    .suportbox p{
+        font-size: 30px;
+    }
+    .suportbox h3{
+        font-size: 35px;
+    }
+    .suportholder{
+        width: 90%;
+        padding-bottom: 30px;
+    }
+    .btnholdersp{
+        bottom: 45px;
+    }
+    .suportbox .logo{
+        top: -75px;
+        left: 428px;
+    }
+    
+    .productmenu{
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+        position: sticky;
+        top: 148px;
+        z-index: 3;
+        background-color: white;
+        padding: 0;
+    }
+    .product{
+        height: fit-content !important;
+        width: 80%;    
+    }
+    .product .icon{
+        height: fit-content;
+    }
+    .product .contact p{
+        font-size: 30px;
+    }
+    .prditem{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:20px !important;
+        margin: 0;
+        border-radius: 0;
+    }
+    .prditem:hover{
+        border-radius: 0;
+    }
+    .prditem.btn {
+        border-radius: 0;
+    }
+    .prditem p{
+        font-size: 30px;
+        text-align: center;
+        margin: 0;
+
+    }
+    .productcorsoer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: fit-content;
     }
     .phproducts{
         display: flex;
@@ -375,6 +489,7 @@
         height: 130px !important;
         padding: 0 !important;
     }
+
     .phproductcontact.productcorsoer{
         display: block;
     }
@@ -431,4 +546,27 @@
     .phproductcontact::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
+    .pointers{
+        padding: 0;
+    }
+}
+
+
+.disabledr {
+    transform: translateY(100px);
+    opacity: 0 !important;
+    visibility: hidden;
+}
+
+.disabledl {
+    transform: translateY(-100px);
+    opacity: 0 !important;
+    visibility: hidden;
+}
+
+
+.seen{
+    transform: translateY(0);
+    opacity: 1 !important;
+    visibility: visible;
 }
