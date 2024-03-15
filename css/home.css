@@ -1,3 +1,4 @@
+
 .slider{
     width: 100%;
     height: 100vh;
@@ -314,14 +315,69 @@ model-viewer {
     justify-content: space-around;
     align-items: center;
 }
+.productslist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+.details{
+    width: 40%;
+    position: sticky;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.details img{
+    width: 70%;
+}
+.corses{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cursbox{
+    width: 250px;
+    height: 309px;
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+
+}
+.cursbox:hover{
+    transform: scale(1.1);
+    box-shadow: rgb(233, 233, 233) 0px 0px 10px 0px;
+}
+.cursbox .iconc { 
+    width: 100%;    
+}
+.cursbox .info{
+    text-align: center;
+}
+.cursbox .info *{
+    text-align: center;
+}
+.cursbox .iconc img{
+    width: 100%;
+    border-radius: 10px;
+}
+
 /*for phone */
 @media (max-width : 1000px) {
-    /* .pc{
+    .pc{
         display: none;
     }
     .ph{
         display: block;
-    } */
+    } 
     body{
         overflow-x: hidden;
     }
