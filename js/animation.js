@@ -1,8 +1,8 @@
-let sc = document.getElementById('scene')
-    let p = new Parallax(sc , {
-        relativeInput: true
-    });
-    // parallaxInstance.friction(0.2, 0.2);
+// let sc = document.getElementById('scene')
+//     let p = new Parallax(sc , {
+//         relativeInput: true
+//     });
+//     // parallaxInstance.friction(0.2, 0.2);
 
 $(document).ready(function(){
     var controler = new ScrollMagic.Controller()
@@ -26,13 +26,13 @@ $(document).ready(function(){
 
 
 
-const svg = new Walkway({
-    selector: '#testsvg',
-    duration: 1000,
-});
+// const svg = new Walkway({
+//     selector: '#testsvg',
+//     duration: 1000,
+// });
 
   
-svg.draw(after);
+// svg.draw(after);
   
 function after(){
     fillPath('test','#695a69');

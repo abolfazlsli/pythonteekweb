@@ -1,6 +1,15 @@
 *{
     -webkit-tap-highlight-color: #00000000;
 }
+@keyframes moveanime {
+    from {
+        transform: rotate3d(1, 1, 1, 304deg) translate(0px , 0px);
+    }
+    to{
+        transform: rotate3d(1, 1, 1, 304deg) translate(100px , 0px);
+    }
+    
+}
 @keyframes btnanimation {
     from {
         bottom: 70px;
@@ -50,7 +59,6 @@ a:hover::after{
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: white;
 }
 .root{
     width: 1360px;
@@ -106,8 +114,14 @@ a:hover::after{
         top: 200px !important;
         left: 197px !important;
     }
+    .rightside{
+        direction: rtl;
+    }
     .rightside h1 {
         font-size: 55px;
+        position: absolute;
+        right: 0px;
+        top: 612px;
     }
     #testsvg {
         width: 80% !important;
@@ -142,7 +156,6 @@ a:hover::after{
     justify-content: center;
     align-items: center;
     direction: rtl;
-    overflow: hidden;
     width: 100%;
     position: relative;
     background-image: url('https://office.mizito.ir/assets/img/wallpaper/back-pattern.png');
@@ -184,7 +197,7 @@ a:hover::after{
     border-width: 5px;
     border-radius: 72% 28% 36% 57% / 42% 67% 33% 49%;
     position: absolute;
-    bottom: 10px;
+    bottom: 150px;
     z-index: -1;
     animation-name: borderanimation;
     animation-duration: 1s;
@@ -232,18 +245,136 @@ a:hover::after{
 #testsvg{
     position: absolute;
     color: #00000000;
-    bottom: 95px;
+    bottom: -193px;
     left: -494px;
     width: 32%;
     height: 100%;
-    transform: rotate(-270deg) rotateX(180deg);
+    /* transform: rotate(-270deg) rotateX(180deg); */
 }
 .button-33 svg{
     width: 30px;
     height: 30px;
 }
+.logovector{
+    width: 50px;
+    cursor: pointer;   
+}
+.c-sharp{
+    position: absolute;
+    top: 226px;
+    left: 238px;
+    z-index: 9;
+    transform: rotate(277deg);
+}
+.php{
+    position: absolute;
+    top: 85px;
+    left: 270px;
+    z-index: 9;
+}
+.v1 {
+    background-color: rgba(0, 170, 255, 0.628);
+    width: 100px;
+    height: 100px;
+    top: 437px;
+    left: 456px;
+   border: none;
+}
+.v2 {
+    background-color: rgba(204, 255, 0, 0.448);
+    width: 600px;
+    height: 600px;
+    top: 437px;
+    left: -155px;
+    border: none;
+}
+.v3{
+    background-color: #2ba7696d;
+    width: 350px;
+    height: 350px;
+    top: -100px;
+    left: -54px;
+    border: none;
+}
+.corses{
+    position: relative;
+}
+.details .backdrop.v1{
+    width: 200px;
+    height: 200px;
+    top: 129px;
+    left: 1282px;
+    border: none;
+}
+.imagebox{
+    width: 1350px;
+    height: fit-content;
+    position: absolute;
+    left: -323px;
+    top: -184px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    transform: rotate3d(1, 1, 1, 304deg);
+    animation-name: moveanime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+}
+.imagebox:hover{
+    animation-play-state: paused;
+}
+.imageitem{
+    width: 100px;
+    height: 110px;
+    padding: 10px;
+    margin: 5px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    box-shadow: rgba(255, 255, 255, 0.489) 0px 0px 2px 0px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imageitem .profilepic{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+}
+.imageitem .profilepic img{
+    width: 100%;
+    border-radius: 100%;
+}
+.java{
+  position: absolute;  
+  top: 169px;
+  left: 143px;
+  z-index: 9;
+}
+.python {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(320deg);
+    z-index: 9;
+}
+.logovector:hover{
+    width: 60px;
+}
 .topparent{
     position: relative;
+    /* background-image: url('../assets/img/Daco_5277384.png');
+    background-position: center;
+    background-size: cover; */
 
 }
 

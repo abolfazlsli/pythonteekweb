@@ -1,4 +1,3 @@
-
 let menustatus = false
 const menumanager = () =>{
     let elmmenu = document.querySelector('.menu')

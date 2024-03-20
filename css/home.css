@@ -182,8 +182,11 @@
     border-radius: 15px;
 }
 model-viewer {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: -50px;
+    z-index: 99;
 }
 .personitem{
     width: 100%;
@@ -329,6 +332,9 @@ model-viewer {
     justify-content: center;
     flex-direction: column;
 }
+.details h1{
+    text-align: right;
+}
 .details img{
     width: 70%;
 }
@@ -336,13 +342,13 @@ model-viewer {
     width: 60%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
 .cursbox{
     width: 250px;
-    height: 309px;
+    height: fit-content;
     background-color: whitesmoke;
     margin: 5px;
     border-radius: 10px;
@@ -350,6 +356,7 @@ model-viewer {
     justify-content:flex-start;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 30px;
 
 }
 .cursbox:hover{
@@ -360,6 +367,13 @@ model-viewer {
     width: 100%;    
 }
 .cursbox .info{
+    text-align: center;
+    
+}
+.cursbox .info p{
+    text-align: right;
+}
+.cursbox .info h3{
     text-align: center;
 }
 .cursbox .info *{
@@ -372,6 +386,44 @@ model-viewer {
 
 /*for phone */
 @media (max-width : 1000px) {
+    model-viewer{
+        width: 535px;
+        height: 700px;
+        top: 346px;
+    }
+    .productslist{
+        flex-direction: column;
+    }
+    .productslist .details{
+        width: 100%;
+        position: static;
+    }
+    .productslist .corses{
+        width: 100%;
+    }
+    .details .backdrop {
+        display: none;
+    }
+    .productslist .corses .cursbox {
+        width: 500px;
+        padding-bottom: 0;
+    }
+    .productslist .corses .cursbox .info h3 {
+        font-size: 55px;
+    }
+    .productslist .corses .cursbox .info p{
+        font-size: 32px;
+    }
+    .singinbtn{
+        font-size: 39px;
+        padding: 28px;
+        width: 100%;
+        border-radius: 0;
+    }
+    .productslist.pc{
+        flex-direction: column-reverse;
+        display: flex;
+    }
     .pc{
         display: none;
     }
