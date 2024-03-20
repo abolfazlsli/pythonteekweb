@@ -1,5 +1,6 @@
-*{
-    -webkit-tap-highlight-color: #00000000;
+@font-face {
+    font-family: fontforall;
+    src: url('../assets/fonts/Webfonts/fonts/woff/IRANSansX-Light.woff');
 }
 @keyframes moveanime {
     from {
@@ -28,7 +29,8 @@ body{
     overflow-x: hidden;
 }
 *{
-    font-family: "Segoe UI";
+    -webkit-tap-highlight-color: #00000000;
+    font-family: 'fontforall';
     transition-duration: 0.3s;
     user-select: none;
 }
@@ -122,6 +124,7 @@ a:hover::after{
         position: absolute;
         right: 0px;
         top: 612px;
+
     }
     #testsvg {
         width: 80% !important;
