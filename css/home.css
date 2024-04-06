@@ -657,6 +657,13 @@ model-viewer {
     .pointers{
         padding: 0;
     }
+    .media{
+        width: 250px !important; 
+    }
+    .medianame h3{
+        text-align: center;
+    }
+    
 }
 
 
@@ -677,4 +684,50 @@ model-viewer {
     transform: translateY(0);
     opacity: 1 !important;
     visibility: visible;
+}
+.typer{
+    text-shadow: white 0px 0px 10px;
+}
+.mediabox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mediabox .media{
+    width: 130px;
+    height: fit-content;
+    background-color: #00000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+.mediabox .medianame{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mediabox .medianame h3{
+    margin: 0;
+}
+
+.mediabox img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.mediabox .medianame a{
+    text-decoration: none;
+    color: black;
 }

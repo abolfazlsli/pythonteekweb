@@ -23,6 +23,9 @@
 h3 ,p {
     text-align: right;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding: 0;
     margin: 0;
@@ -123,7 +126,9 @@ a:hover::after{
         font-size: 55px;
         position: absolute;
         right: 0px;
-        top: 612px;
+        top: 541px;
+        text-align: center;
+        width: 70% !important;
 
     }
     #testsvg {
@@ -177,6 +182,20 @@ a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.rightside h1{
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    right: 45px;
+}
+.rightside h1 span {
+    font-size: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.rightside h1 p{
+    margin: 10px;
 }
 .logobox{
     left: 15px !important;
@@ -293,9 +312,9 @@ a:hover::after{
 }
 .v3{
     background-color: #2ba7696d;
-    width: 350px;
-    height: 350px;
-    top: -100px;
+    width: 510px;
+    height: 537px;
+    top: -158px;
     left: -54px;
     border: none;
 }

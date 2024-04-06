@@ -1,3 +1,4 @@
+
 const chnageperson = (elm,val) => {
     let leftperson = document.querySelector(".leftperson")
     let rightperson = document.querySelector(".rightperson")

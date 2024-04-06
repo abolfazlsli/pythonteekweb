@@ -5,10 +5,10 @@ const innerHeader = () => {
         
         <div class="item">
             <div class="subitem">
-                <a href="/aboutus">ورود </a>
+                <a href="/routes/login">ورود </a>
             </div>
             <div class="subitem">
-                <a href="/aboutus" class="singinbtn">ثبت نام</a>
+                <a href="/routes/register" class="singinbtn">ثبت نام</a>
             </div>
         </div>
         <hr/>
@@ -92,5 +92,6 @@ const innerHeader = () => {
         </div>
     </div>`
     elm.innerHTML = data;
+    window.scrollBy(0,0)
 }
 innerHeader()
